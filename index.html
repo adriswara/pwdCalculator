@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>Calculator</h1>
+
+    <div class="form_settings">
+        <p><span>angka1</span><input type="number" class="pesan" type="text" id="angka1" required value="" /></p>
+        <p><span>angka2</span><input type="number" class="pesan" type="text" id="angka2" required value="" /></p>
+        <button onclick="tambah()">Tambah</button>
+        <button onclick="kurang()" class="submit" type="submit" value="submit">Kurang</button>
+        <button onclick="kali()" class="submit" type="submit" value="submit">Kali</button>
+        <button onclick="bagi()" class="submit" type="submit" value="submit">Bagi</button>
+
+    </div>
+
+    <p id="demo"></p>
+
+    <script>
+        function tambah() {
+            var angka1 = document.getElementById("angka1").value;
+            var angka2 = document.getElementById("angka2").value;
+            var result = parseInt(angka1) + parseInt(angka2);
+            document.getElementById("demo").innerHTML = result;
+        }
+        function kurang() {
+            var angka1 = document.getElementById("angka1").value;
+            var angka2 = document.getElementById("angka2").value;
+            var result = parseInt(angka1) - parseInt(angka2);
+            document.getElementById("demo").innerHTML = result;
+        }
+        function kali() {
+            var angka1 = document.getElementById("angka1").value;
+            var angka2 = document.getElementById("angka2").value;
+            var result = parseInt(angka1) * parseInt(angka2);
+            document.getElementById("demo").innerHTML = result;
+        }
+        function bagi() {
+            var angka1 = document.getElementById("angka1").value;
+            var angka2 = document.getElementById("angka2").value;
+            var result = parseInt(angka1) / parseInt(angka2);
+            document.getElementById("demo").innerHTML = result;
+        }
+
+    </script>
+
+</body>
+
+</html>
